@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <form action="http://example.com/" method="POST" enctype="multipart/form-data">
+      <fieldset>
+         <legend>Registration</legend>
+         <label for="User_name">Name</label>
+         <input id="User_name" type="text" name="User_name" placeholder="John" tabindex="1" required><br><br>
+
+         <label for="email">Email</label>
+         <input type="email" id="email" name="email" placeholder="my@mail.com" tabindex="2" required><br><br>
+
+         <label for="password">Password</label>
+         <input type="password" id="password" name="Password" tabindex="3" required><br><br>
+
+         <label for="confirm_password">Repeat Password</label>
+         <input type="password" name="confirm_password" id="confirm_password" tabindex="4" required><br><br>
+
+         <label for="birthday">Date</label>
+         <input type="date" name="birthday" id="birthday" min="1900-01-01" max="2020-01-01" tabindex="5"
+            required><br><br>
+
+         <fieldset>
+            <legend>Select your gender</legend>
+            <input type="radio" id="gender_1" name="gender" value="male">Male
+            <input type="radio" id="gender_2" name="gender" value="Female">Female
+            <input type="radio" id="gender_3" name="gender" value="Others">Others
+         </fieldset><br>
+
+         <fieldset>
+            <legend>Select language wjich you know</legend>
+            <input type="radio" id="language_1" name="language" value="html">HTML
+            <input type="radio" id="language_2" name="language" value="js">JS
+            <input type="radio" id="language_3" name="language" value="CSS">CSS
+            <input type="radio" id="language_4" name="language" value="Others">Others
+         </fieldset><br><br>
+
+         <label for="experience">Select yout experience</label>
+         <select name="experience" id="experience">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+         </select>
+
+         <br><br><label for="description">About</label><br><br>
+         <textarea name="description" id="description" placeholder="Describe yourself like a person" cols="150"
+            rows="10"></textarea><br><br>
+
+         <button type="submit">Send</button>
+
+      </fieldset>
+   </form>
+
+</body>
+
+</html>
